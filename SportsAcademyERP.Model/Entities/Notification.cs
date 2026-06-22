@@ -1,0 +1,15 @@
+namespace SportsAcademyERP.Model.Entities
+{
+    public class Notification
+    {
+        public int NotificationId { get; set; }
+        public int UserId { get; set; }
+        public int AcademyId { get; set; }
+        public string Title { get; set; } = string.Empty;
+        public string Message { get; set; } = string.Empty;
+        public string NotificationType { get; set; } = string.Empty; // Info, Warning, Alert, Success
+        public bool IsRead { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime? ReadAt { get; set; }
+    }
+}
